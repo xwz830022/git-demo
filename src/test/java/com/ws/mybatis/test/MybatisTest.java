@@ -52,13 +52,18 @@ public class MybatisTest {
 //        System.out.println(user);
 //        sqlSession.close();
 //    }
+//
+//    @Test
+//    public void testGetAllUsers() {
+//        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+//        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+//        List<User> allUsers = userMapper.getAllUsers();
+//        allUsers.forEach(System.out::println);
+//        sqlSession.close();
+//    }
 
     @Test
-    public void testGetAllUsers() {
-        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
-        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        List<User> allUsers = userMapper.getAllUsers();
-        allUsers.forEach(System.out::println);
-        sqlSession.close();
+    public void testJenkins() {
+        System.out.println("test of jenkins!");
     }
 }
